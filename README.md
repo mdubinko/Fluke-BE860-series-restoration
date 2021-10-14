@@ -32,10 +32,12 @@ brick, but with a different connector spliced on.
 
 You can still use your device with 6x AA batteries, though this could get expensive.
 
-TODO: Instructions on desktop recharging a Fluke battery.
+If you have a Fluke battery, it can charge on a standard charger that supports 6S NiMH.
+(Have not verified on a NiCd battery, but these are more forgiving in charging, so it
+would probably work.)
 
 TODO: Discussion on NiCd vs NiMH batteries and chargers, by model.
-IMPORTANT: charging a NiMH battery in a device with a NiCd charger could be dangerous!
+IMPORTANT: charging a NiMH battery in a device built for charging NiCd could be dangerous!
 
 ## Electrical specifications
 
@@ -124,4 +126,41 @@ the end stop.
 
 The grip dimensions are not very important, as they will not affect the ability to
 insert the plug into the device.
+
+## Construction options
+
+Some various option to power a restored device.
+
+### Constructing a plug
+
+One option is to take a normal 3.5mm barrel connector, like Jameco 71192 or numerous
+others, and attach a longer length of barrel connector, like DigiKey CP-PPM-2-35135-B-ND,
+then applying heat shrink, resulting in a plug that can be attached to a quality 12V
+source and used as a replacement for the BE860.
+
+The latter connector has a center-pin solder nub about 1.4mm in diameter, and can be
+gently swaged into the end of a ID 1.3 or 1.35mm connector with a vise and rubber mallet.
+
+The lower center conductor might start to push out the back, which might require physical
+support while convincing the two pieces together. And the black plastic insulating ring
+might break off, in which case some JB-Weld will do the trick.
+(Yes, this is non-conductive)
+
+This will leave the top outer connection floating, so some conductive copper tape and
+maybe a little solder will complete the connection. Cover the assembly with heat-shrink.
+
+###  Other options to consider
+
+  - Mount a more convenient barrel jack right against the inner wall of the enclosure
+  - Bypass the charging port and get 12V into the 3-pin DC connector some other way
+    - (Depending on the model, this may not adequately/safely charge NiMH internal batteries)
+  - Get 9V into the battery posts for the AA batteries
+  - Get 7.2V into the pins used to connect the internal battery
+
+I have not tried any of these. Do so at your own risk (but do report back on what works)
+
+## References
+
+  - https://www.eevblog.com/forum/testgear/fluke-scopemeter-860-charger-battery-eliminator/ 
+  - https://www.eevblog.com/forum/testgear/fluke-867b-good-or-obsolete/
 
