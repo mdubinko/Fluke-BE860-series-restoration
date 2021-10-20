@@ -54,16 +54,14 @@ wire.
 
 ## Mechanical specifications
 
-(As of this writing, I do not have either a genuine or 3rd-party plug in hand to perform
-exact caliper measurements. If you do, please contact me, or file a ticket on this repo.)
-
 ### Jack
 
 <img src="https://github.com/mdubinko/Fluke-BE860-series-restoration/raw/main/photos/BE860-jack-internal.jpg" width="500"/>
 
 While most devices mount a DC power connector at the outer casing, this one is mounted 
-deeper inside, and thus requires a longer extension on the plug, detailed below. The jack
-assembly slides out with no fasteners, once the back case and top PCB have been removed.
+deeper inside, and thus requires a longer extension on the plug, detailed below. With
+the case open, the jack assembly slides out with no fasteners, once the back case and
+top PCB have been moved out of the way.
 
 The internal mount consists of two plastic pieces glued together, and reasonably easy to
 separate, revealing inside an ordinary barrel jack connector, with an "EX" logo.
@@ -99,33 +97,30 @@ just something made up for the purposes of this document.
                                   |
            <-- fits inside device | sticks out of device -->
 
-Based on the earlier observations, the barrel part of the jack--the metal part that makes
-physical connection with the charging circuit, is a 3.5mm OD barrel connector,
-with an ID of 1.3 or maybe the more common 1.35mm. Aside from the Jameco part, some other
-possible parts are:
+Measured dimensions from an EEVBlog thread given in references:
+
+  - Barrel inner diameter: between 1.2mm and 1.38mm
+  - Barrel outer diameter: 3.46mm (3.5mm acceptable)
+  - Barrel length: 8.3mm
+  - Extension outer diameter: 4.9mm
+  - Extension length: 20mm
+
+Aside from the Jameco part, some other possible parts for the barrel connector are:
 
   - DigiKey CP-PPM-2-35135-B-ND
   - DigiKey CP-PPM-2-35135-BG-ND
 
-The extension is covered with insulating plastic, and has an OD of perhaps 4.5mm.
-Anything larger would not fit through the opening in the outer shell of the device.
-
 <img src="https://github.com/mdubinko/Fluke-BE860-series-restoration/raw/main/photos/865-jack-external-ruler.jpg" width="500"/>
-
-The length of the extension is about twice the length of the barrel. Approximate lengths:
-
-  - Barrel: 9mm
-  - Extension: 17mm
 
 Based on caliper measurements, the maximum distance (on a Fluke 865) from the outside
 wall of the enclosure to the end-stop is 28.0mm. This accounts for the length of the
-barrel + extension. The sharpie line on the internal housing shows the position of
-the end stop.
+barrel + extension, with the plug snug against the outer case.
+The sharpie line on the internal housing shows the position of the end stop.
 
 <img src="https://github.com/mdubinko/Fluke-BE860-series-restoration/raw/main/photos/865-internal-jack-assembly.jpg" width="500"/>
 
-The grip dimensions are not very important, as they will not affect the ability to
-insert the plug into the device.
+The grip dimensions are not particularly important, as they will not affect the ability
+to insert the plug into the device.
 
 ## Construction options
 
@@ -141,7 +136,7 @@ source and used as a replacement for the BE860.
 The latter connector has a center-pin solder nub about 1.4mm in diameter, and can be
 gently swaged into the end of a ID 1.3 or 1.35mm connector with a vise and rubber mallet.
 
-The lower center conductor might start to push out the back, which might require physical
+The lower center conductor might start to push out the back, and so might require physical
 support while convincing the two pieces together. And the black plastic insulating ring
 might break off, in which case some JB-Weld will do the trick.
 (Yes, this is non-conductive)
@@ -163,4 +158,5 @@ I have not tried any of these. Do so at your own risk (but do report back on wha
 
   - https://www.eevblog.com/forum/testgear/fluke-scopemeter-860-charger-battery-eliminator/ 
   - https://www.eevblog.com/forum/testgear/fluke-867b-good-or-obsolete/
+  - https://www.eevblog.com/forum/repair/fluke-867-863-865-or-867b-charging-adapter-connector-physical-dimensions/
 
