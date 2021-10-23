@@ -133,7 +133,7 @@ others, and attach a longer length of barrel connector, like DigiKey CP-PPM-2-35
 then applying heat shrink, resulting in a plug that can be attached to a quality 12V
 source and used as a replacement for the BE860.
 
-The latter connector has a center-pin solder nub about 1.4mm in diameter, and can be
+The latter connector has a center-pin solder cup about 1.4mm in diameter, and can be
 gently swaged into the end of a ID 1.3 or 1.35mm connector with a vise and rubber mallet.
 
 The lower center conductor might start to push out the back, and so might require physical
@@ -143,6 +143,9 @@ might break off, in which case some JB-Weld will do the trick.
 
 This will leave the top outer connection floating, so some conductive copper tape and
 maybe a little solder will complete the connection. Cover the assembly with heat-shrink.
+
+<img src="https://raw.githubusercontent.com/mdubinko/Fluke-BE860-series-restoration/main/photos/Homemade_Fluke_860_series.jpg" width="500"/>
+
 
 ###  Other options to consider
 
